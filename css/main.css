@@ -1,0 +1,63 @@
+.nav-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr 1fr;
+      grid-template-columns: -webkit-min-content 1fr 1fr;
+      grid-template-columns: min-content 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.nav-container .nav__logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.nav-container .nav__logo + img {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: auto;
+}
+
+.nav-container .menu__list {
+  grid-row: 2/-2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.nav-container .menu__icon {
+  grid-row: -3/-2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
+.nav-container .menu__icon div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
+@font-face {
+  font-family: "DancingScript Bold";
+  src: url(/fonts/Dancing_Script/static/DancingScript-Bold.ttf);
+}
+
+@font-face {
+  font-family: "DancingScript Regular";
+  src: url(/fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+}
+/*# sourceMappingURL=main.css.map */
